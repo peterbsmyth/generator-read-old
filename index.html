@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="read">
+
+<head>
+    <meta charset="utf-8">
+    <title>Generator for read</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="/node_modules/angular/angular.min.js" charset="utf-8"></script>
+
+    <!-- angular-file-saver and it's dependencies -->
+    <script src="/node_modules/blob-tmp/Blob.js" charset="utf-8"></script>
+    <script src="/node_modules/file-saver/FileSaver.min.js" charset="utf-8"></script>
+    <script src="/node_modules/angular-file-saver/dist/angular-file-saver.min.js" charset="utf-8"></script>
+</head>
+
+<body ng-controller="ReadCtrl">
+    <form class="" ng-submit="fn.generate();">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input ng-model="data.title" class="form-control" type="text" id="title" value="">
+        </div>
+        <div class="form-group">
+            <label for="subtitle">Subtitle</label>
+            <input ng-model="data.subtitle" class="form-control" type="text" id="subtitle" value="">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input ng-model="data.author" class="form-control" type="text" id="author" value="">
+        </div>
+        <div class="form-group">
+            <label for="amazon">Amazon</label>
+            <input ng-model="data.amazon" class="form-control" type="text" id="amazon" value="">
+        </div>
+        <button class="btn btn-default" type="submit" name="button">Generate</button>
+    </form>
+    <script src="/js/app.js" charset="utf-8"></script>
+</body>
+
+</html>

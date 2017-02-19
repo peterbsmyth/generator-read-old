@@ -1,0 +1,29 @@
+{
+  "name": "generator-read",
+  "version": "1.0.0",
+  "description": "A generator of Markdown Templates for read",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterbsmith2/generator-read.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterbsmith2/generator-read/issues"
+  },
+  "homepage": "https://github.com/peterbsmith2/generator-read#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-file-saver": "^1.1.3",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^1.6.1"
+  }
+}
