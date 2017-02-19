@@ -14,7 +14,7 @@ angular.module('read')
       var author = `## ${$scope.data.author} \n`;
       var amazon = `[Amazon](${$scope.data.amazon}) \n`;
       var data = new Blob([title, subtitle, author, amazon], { type: 'text/plain;charset=utf-8' });
-      FileSaver.saveAs(data, 'text.txt');
+      FileSaver.saveAs(data, 'README.md');
     }
 
 
