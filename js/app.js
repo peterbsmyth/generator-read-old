@@ -12,8 +12,9 @@ angular.module('read')
       var title = `# ${$scope.data.title} \n`;
       var subtitle = `## ${$scope.data.subtitle} \n`;
       var author = `## ${$scope.data.author} \n`;
-      var amazon = `[Amazon](${$scope.data.amazon}) \n`;
-      var data = new Blob([title, subtitle, author, amazon], { type: 'text/plain;charset=utf-8' });
+      var buy = `[Amazon](${$scope.data.amazon}) | [B&N](${$scope.data.bn}) \n\n`;
+      var chapters = "## Chapters \n";
+      var data = new Blob([title, subtitle, author, buy, chapters], { type: 'text/plain;charset=utf-8' });
       FileSaver.saveAs(data, 'README.md');
     }
 
