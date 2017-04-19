@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-offset-3 col-md-6">
+      <form class="" ng-submit="fn.generateChapter();">
+          <div class="form-group">
+              <label for="title">Title</label>
+              <input ng-model="data.title" class="form-control" type="text" id="title" value="">
+          </div>
+          <div class="form-group">
+              <label for="subtitle">Subtitle</label>
+              <input ng-model="data.subtitle" class="form-control" type="text" id="subtitle" value="">
+          </div>
+          <div class="form-group">
+              <label for="author">Author</label>
+              <input ng-model="data.author" class="form-control" type="text" id="author" value="">
+          </div>
+          <div class="form-group">
+              <label for="amazon">Amazon Link</label>
+              <input ng-model="data.amazon" class="form-control" type="text" id="amazon" value="">
+              <div class="help-block">URL for Amazon Product Page</div>
+          </div>
+          <div class="form-group">
+              <label for="bn">Barnes+Noble Link</label>
+              <input ng-model="data.bn" class="form-control" type="text" id="bn" value="">
+              <div class="help-block">URL for B+N Product Page</div>
+          </div>
+          <div class="form-group">
+              <label for="chapterNum">Chapter Number</label>
+              <input ng-model="data.chapterNum" class="form-control" type="text" id="chapterNum" value="">
+          </div>
+          <div class="form-group">
+              <label for="ch#">Chapter Title</label>
+              <input ng-model="data.chapterTitle" class="form-control" type="text" id="chapterTitle" value="">
+          </div>
+          <button class="btn btn-block btn-default" type="submit" name="button">Generate</button>
+      </form>
+  </div>
+</div>

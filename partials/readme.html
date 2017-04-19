@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-offset-3 col-md-6">
+      <form class="" ng-submit="fn.generateReadme();">
+          <div class="form-group">
+              <label for="title">Title</label>
+              <input
+              ng-model="data.title"
+              ng-change="fn.setData('title')"
+              class="form-control"
+              type="text"
+              id="title"
+              value="">
+          </div>
+          <div class="form-group">
+              <label for="subtitle">Subtitle</label>
+              <input
+              ng-model="data.subtitle"
+              ng-change="fn.setData('subtitle')"
+              class="form-control"
+              type="text"
+              id="subtitle"
+              value="">
+          </div>
+          <div class="form-group">
+              <label for="author">Author</label>
+              <input
+              ng-model="data.author"
+              ng-change="fn.setData('author')"
+              class="form-control"
+              type="text"
+              id="author"
+              value="">
+          </div>
+          <div class="form-group">
+              <label for="amazon">Amazon Link</label>
+              <input
+              ng-model="data.amazon"
+              ng-change="fn.setData('amazon')"
+              class="form-control"
+              type="text"
+              id="amazon"
+              value="">
+              <div class="help-block">URL for Amazon Product Page</div>
+          </div>
+          <div class="form-group">
+              <label for="bn">Barnes+Noble Link</label>
+              <input
+              ng-model="data.bn"
+              ng-change="fn.setData('bn')"
+              class="form-control"
+              type="text"
+              id="bn"
+              value="">
+              <div class="help-block">URL for B+N Product Page</div>
+          </div>
+          <button class="btn btn-block btn-default" type="submit" name="button">Generate</button>
+      </form>
+  </div>
+</div>

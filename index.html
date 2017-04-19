@@ -12,39 +12,30 @@
     <script src="/node_modules/blob-tmp/Blob.js" charset="utf-8"></script>
     <script src="/node_modules/file-saver/FileSaver.min.js" charset="utf-8"></script>
     <script src="/node_modules/angular-file-saver/dist/angular-file-saver.min.js" charset="utf-8"></script>
+
+    <!-- ui-router -->
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
 </head>
 
-<body ng-controller="ReadCtrl">
-    <div class="col-md-offset-3 col-md-6">
-        <h1 class="text-center">README Generator for <a href="https://github.com/peterbsmith2/read">read</a></h1>
-        <form class="" ng-submit="fn.generate();">
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input ng-model="data.title" class="form-control" type="text" id="title" value="">
-            </div>
-            <div class="form-group">
-                <label for="subtitle">Subtitle</label>
-                <input ng-model="data.subtitle" class="form-control" type="text" id="subtitle" value="">
-            </div>
-            <div class="form-group">
-                <label for="author">Author</label>
-                <input ng-model="data.author" class="form-control" type="text" id="author" value="">
-            </div>
-            <div class="form-group">
-                <label for="amazon">Amazon Link</label>
-                <input ng-model="data.amazon" class="form-control" type="text" id="amazon" value="">
-                <div class="help-block">URL for Amazon Product Page</div>
-            </div>
-            <div class="form-group">
-                <label for="amazon">Barnes+Noble Link</label>
-                <input ng-model="data.bn" class="form-control" type="text" id="bn" value="">
-                <div class="help-block">URL for B+N Product Page</div>
-            </div>
-            <button class="btn btn-block btn-default" type="submit" name="button">Generate</button>
-        </form>
-        </form>
+<body>
+    <nav>
+      <ul class="nav nav-tabs">
+        <li>
+          <a ui-sref="readme">README</a>
+        </li>
+        <li>
+          <a ui-sref="chapter">Chapter</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <h1 class="text-center">README Generator for <a href="https://github.com/peterbsmith2/read">read</a></h1>
+        </div>
+      </div>
+      <ui-view></ui-view>
     </div>
-
     <script src="/js/app.js" charset="utf-8"></script>
 </body>
 
